@@ -14,8 +14,7 @@ RUN yum -y --setopt=tsflags=nodocs update && \
                    postgresql-contrib && \
     yum clean all && \
     git clone ${STRESS_TOOLS_URL} ${STRESS_TOOLS_HOME} && \
-    cd ${STRESS_TOOLS_HOME} && \
-    git checkout tags/${STRESS_TOOLS_VERSION} -b release/${STRESS_TOOLS_VERSION}
+    cd ${STRESS_TOOLS_HOME}
 
 RUN mkdir -p ${STRESS_TOOLS_HOME}/udpgen/build && \
     cd ${STRESS_TOOLS_HOME}/udpgen/build && \

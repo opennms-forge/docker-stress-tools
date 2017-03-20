@@ -26,10 +26,6 @@ RUN cd ${STRESS_TOOLS_HOME}/jdbc-events && \
     mvn clean package && \
     rm -rf /root/.m2
 
-RUN cd ${STRESS_TOOLS_HOME}/udplistener && \
-    mvn clean package && \
-    rm -rf /root/.m2
-
 LABEL license="AGPLv3" \
       org.opennms.stress.tools.version="${STRESS_TOOLS_VERSION}" \
       vendor="OpenNMS Community" \

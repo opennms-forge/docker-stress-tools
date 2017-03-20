@@ -3,7 +3,7 @@ FROM opennms/maven:3.3.9_8u121-jdk
 MAINTAINER Ronny Trommer <ronny@opennms.org>
 
 ARG STRESS_TOOLS_URL=https://github.com/j-white/opennms-events-stress-tools.git
-ARG STRESS_TOOLS_VERSION=2017.01.10
+ARG STRESS_TOOLS_VERSION=master
 ENV STRESS_TOOLS_HOME /opt/stress-tools
 
 RUN yum -y --setopt=tsflags=nodocs update && \

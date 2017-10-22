@@ -13,6 +13,7 @@ RUN yum -y --setopt=tsflags=nodocs update && \
                    net-snmp-devel \
                    postgresql-contrib && \
     yum clean all && \
+    rm -rf /var/cache/yum && \
     git clone ${STRESS_TOOLS_URL} ${STRESS_TOOLS_HOME} && \
     cd ${STRESS_TOOLS_HOME}
 

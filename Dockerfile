@@ -1,6 +1,6 @@
-FROM opennms/maven:3.5.0_8u131-jdk
+FROM opennms/maven:3.5.0_8u151-jdk
 
-MAINTAINER Ronny Trommer <ronny@opennms.org>
+LABEL maintainer "Ronny Trommer <ronny@opennms.org>"
 
 ARG STRESS_TOOLS_URL=https://github.com/j-white/opennms-events-stress-tools.git
 ARG STRESS_TOOLS_VERSION=2017.01.10

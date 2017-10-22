@@ -1,4 +1,4 @@
-FROM opennms/maven:3.5.0_8u144-jdk
+FROM opennms/maven:3.5.0_8u151-jdk
 
 LABEL maintainer "Ronny Trommer <ronny@opennms.org>"
 
